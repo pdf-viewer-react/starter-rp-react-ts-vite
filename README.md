@@ -71,7 +71,7 @@ interface Props {
   defaultLayoutProps?: RPLayoutProps;
 }
 
-export const AppPDFViewer = (props: Props) => {
+export const AppPdfViewer = (props: Props) => {
   const { showToolbar = true, providerProps, defaultLayoutProps } = props;
 
   return (
@@ -97,7 +97,7 @@ export const AppPDFViewer = (props: Props) => {
 
 ```tsx
 import { RPConfig } from "@pdf-viewer/react";
-import { AppPDFViewer } from "./components/AppPDFViewer";
+import { AppPdfViewer } from "./components/AppPdfViewer";
 
 function App() {
   return (
@@ -106,16 +106,16 @@ function App() {
         <h1>RP Starter Toolkit: Vite + React</h1>
         <br />
         <h2>Default Toolbar</h2>
-        <AppPDFViewer />
+        <AppPdfViewer />
         <h2>Without Toolbar</h2>
-        <AppPDFViewer
+        <AppPdfViewer
           showToolbar={false}
           defaultLayoutProps={{
             style: { width: "100%", height: "550px" },
           }}
         />
         <h2>Mobile</h2>
-        <AppPDFViewer
+        <AppPdfViewer
           defaultLayoutProps={{
             style: { width: "500px" },
           }}
