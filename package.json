@@ -1,16 +1,18 @@
 {
-  "name": "starter-vite-rp-ts",
+  "name": "starter-rp-react-ts-vite",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Welcome to the React PDF Kit Starter Toolkit! This repository provides a comprehensive guide on integrating React PDF with React, TypeScript and Vite. It showcases how React PDF can be integrated and rendered as part of a React.js project.",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "vite"
   },
   "dependencies": {
-    "@pdf-viewer/react": "latest",
+    "@react-pdf-kit/viewer": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

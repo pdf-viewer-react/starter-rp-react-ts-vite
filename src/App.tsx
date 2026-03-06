@@ -1,11 +1,12 @@
-import { RPConfig } from "@pdf-viewer/react";
-import { AppPdfViewer } from "./components/AppPDFViewer";
+import "./App.css";
+import { RPConfig } from "@react-pdf-kit/viewer";
+import { AppPdfViewer } from "./components/AppPdfViewer";
 
 function App() {
   return (
     <RPConfig licenseKey="">
       <div className="container">
-        <h1>RP Starter Toolkit: Vite + React</h1>
+        <h1>React PDF Kit Starter Toolkit in React.js, TypeScript and Vite</h1>
         <br />
         <h2>Default Toolbar</h2>
         <AppPdfViewer />
